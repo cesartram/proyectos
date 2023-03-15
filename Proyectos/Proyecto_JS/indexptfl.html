@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css ">
+</head>
+<body>
+    <!-- MENÚ ENCABEZADO -->
+    <div class="contenedor-header"> 
+        <header>
+            <div class="logo">
+                <a href="#">Cesart Ram</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()"()>SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCIÓN DE INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="./img/heroe.jpg" alt="">
+            </div>
+            <h1>CESART RAMIREZ</h1>
+            <h2>Administrador de Empresas - Web Developer</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN S O B R E  M Í -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola soy Césart Ramírez</span> Soy un administrador de empresas con más vocaciones a emprendedor y crear cosas nuevas, me encanta innovar y darle mis toques ''Ramisticos'' a mis trabajos, soy apasionado por la tecnología, el fútbol y las Artes Marciales Mixtas, el estoicismo es mi forma de vivir.
+
+        <div class="fila">
+            <!-- Datos Personales -->
+            <div class="col">
+                <h3>Datos Personales</h3>
+                <ul>
+                    <li>
+                        <strong>Fecha de Nacimiento</strong>
+                        11-08-1995
+                    </li>
+                    <li>
+                        <strong>Número de Teléfono</strong>
+                        +58 412-075-1294
+                    </li>
+                    <li>
+                        <strong>E-Mail</strong>
+                        cesartramdev@gmail.com
+                    </li>
+                    <li>
+                        <strong>Dirección</strong>
+                        51 01 Mérida, Venezuela
+                    </li>
+                    <li>
+                        <strong>Cargo</strong>
+                        <span>FREELANCE</span>
+                    </li>
+                </ul>
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </div>
+
+            <!-- Intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            <span>NEGOCIOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>ESTOICISMO</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-microchip"></i>
+                            <span>TECH</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>FUTBOL</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-music"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            <span>PELICULAS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-hand-fist"></i>
+                            <span>MIXED MARTIAL ARTS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- SECCIÓN S K I L L S-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skills -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SASS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>66%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>TAILDWIND</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>67%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <!-- SECCIÓN C U R R I C U L U M -->
+    
+    <!-- COLUMNA I Z Q U I E R D A-->
+    <section class="curriculum" id="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum Convencional</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Finanzas y Administración de Empresas</h4>
+                        <span class="casa">Instituto Universitario de tecnología Dr. Cristobal Mendoza</span>
+                        <span class="fecha">2014 - 2017</span>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- COLUMNNA D E R E C H A -->
+    <section class="curriculum" id="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum Web Developer</h2>
+            <div class="fila">
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>FullStack Developer</h4>
+                        <span class="casa">Apple, Inc</span>
+                        <span class="fecha">2026 -</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quae veniam magnam est quibusdam, unde consequuntur deleniti, aliquid nihil nobis perferendis, animi possimus aperiam quis. Vitae dolore deserunt sint maxime?</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Back Developer</h4>
+                        <span class="casa">OpenAI</span>
+                        <span class="fecha">2024-2025</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quae veniam magnam est quibusdam, unde consequuntur deleniti, aliquid nihil nobis perferendis, animi possimus aperiam quis. Vitae dolore deserunt sint maxime?</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Google, LLC</span>
+                        <span class="fecha">2023-2024</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quae veniam magnam est quibusdam, unde consequuntur deleniti, aliquid nihil nobis perferendis, animi possimus aperiam quis. Vitae dolore deserunt sint maxime?</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN  P O R T A F O L I O -->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="./img/portafolio 1.jpg" alt="">
+                    <div class="overlay">
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./img/portafolio 2.png" alt="">
+                    <div class="overlay">
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./img/portafolio 3.jpg" alt="">
+                    <div class="overlay">
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./img/portafolio 4.jpg" alt="">
+                    <div class="overlay">
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./img/portafolio 5.jpg" alt="">
+                    <div class="overlay">
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./img/portafolio 6.jpg" alt="">
+                    <div class="overlay">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN C O N T A C T O -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- FORMULARIO -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número Teléfonico">
+                    <input type="text" placeholder="Correo Eléctronico">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button id="boton-formulario">
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- MAPA -->
+                <div class="col">
+                    <img src="./img/Ubicacion 9.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Venezuela 5101. Mérida, Mérida
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                WhatsApp: +58 412-075-1294
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: cesartramdev@gmail.com
+                            </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- SECCIÓN R E L O J-->
+    <section>
+    <div class="wrap">
+        <div class="widget">
+            <div class="fecha">
+                <p id="fecha"></p>
+            </div>
+            <div class="reloj">
+                <p id="hora"></p>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="jvp.js"></script>
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="jvp.js"></script>
+
+
+
+</body>
+</html>

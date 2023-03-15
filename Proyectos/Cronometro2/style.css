@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    top: 0px;
+    margin: 0px;
+}
+
+#lista::-webkit-scrollbar{
+    background-color: #15617d;
+    width: 10px;
+}
+
+#lista::-webkit-scrollbar-thumb{
+    background: radial-gradient(#15717d,#021a2e);
+    border-radius: 3px;
+}

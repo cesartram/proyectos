@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Cronometro</title>
+    </head>
+    <body class="w-[100vw] h-[100vh] bg-[url('./imagenes/fondo.svg')] bg-no-repeat bg-cover flex flex-col justify-center items-center">
+        <h1 class="text-[50px] font-[700] font-['roboto'] bg-black/25 px-6 py-2 rounded-2xl mt-[-200px] mb-[70px]">Cronometro Digital</h1>
+
+        <div class="flex gap-32 items-center">
+            <!--Cuerpo del cronometro-->
+            <div class="flex flex-col justify-center gap-4 rounded-3xl h-[200px] items-center bg-green-600 px-6 py-8 shadow-md">
+                <div id="pantalla" class="bg-white">
+                    <p class="text-[50px] font-[500] w-[263px]">
+                        <span id="minutos" class="text-[50px] font-[500] ml-2">00</span> :
+                        <span id="segundos" class="text-[50px] font-[500]">00</span> :
+                        <span id="milesimas" class="text-[50px] font-[500]">00</span>
+                    </p>
+                </div>
+                <div id="botones" class="flex gap-6">
+    
+                    <!--Boton de Play-->
+                    <button id="play" class="">
+                        <img src="./imagenes/play.png" alt="play" class="w-[40px]">
+                    </button>
+    
+                    <!--Boton de Pausa-->
+                    <button id="pausa" class="">
+                        <img src="./imagenes/pausa.png" alt="pausa" class="w-[40px]">
+                    </button>
+    
+                    <!--Boton de Reinicio-->
+                    <button id="reiniciar" class="">
+                        <img src="./imagenes/reset.png" alt="reset" class="w-[40px]">
+                    </button>
+    
+                    <!--Boton de captura-->
+                    <button id="capturar" class="">
+                        <img src="./imagenes/Captura.png" alt="captura" class="w-[40px]">
+                    </button>
+    
+                </div>
+            </div>
+            
+            <!--Contenedor de tiempos capturados-->
+            <!--Se llena con JavaScript-->
+            <div id="lista" class="w-[170px] min-h-[50px] max-h-[300px] overflow-auto">
+        
+            </div>
+        </div>
+    </body>
+    <script src="./cronometro.js"></script>
+</html>

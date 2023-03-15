@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+    
+</head>
+<body>
+    <div class="content">
+        <div class="calculator">
+            <!-- Llenar con JavaScript -->
+            <div class="screen">
+                <p id="screen_p">0</p>
+                <input id="screen_input" type="text" placeholder="0" />
+            </div>
+            <!-- Escuchar con JavaScript -->
+            <section class="buttons">
+                <div class="botones_izquierda">
+                    <div class="fila-1">
+                        <button id="clear">C</button>
+                        <button id="del" class="val">DEL</button>
+                        <button name="valor" class="val" value="/">&divide</button>
+                    </div>
+                    <div class="fila-2">
+                        <button name="valor" class="val" value="7">7</button>
+                        <button name="valor" class="val" value="8">8</button>
+                        <button name="valor" class="val" value="9">9</button>
+                    </div>
+                    <div class="fila-3">
+                        <button name="valor" class="val" value="4">4</button>
+                        <button name="valor" class="val" value="5">5</button>
+                        <button name="valor" class="val" value="6">6</button>
+                    </div>
+                    <div class="fila-4">
+                        <button name="valor" class="val" value="1">1</button>
+                        <button name="valor" class="val" value="2">2</button>
+                        <button name="valor" class="val" value="3">3</button>
+                    </div>
+                    <div class="fila_5">
+                        <button name="valor" class="cero" value="0">0</button>
+                        <button name="valor" class="val shift" value=".">.</button>
+                    </div>
+                </div>
+
+                <div class="botones_derecha">
+                    <button name="valor" class="val" value="*">&times</button>
+                    <button name="valor" class="val" value="-">-</button>
+                    <button name="valor" class="val" value="+">+</button>
+                    <button id="boton_igual" class="igual">=</button>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>

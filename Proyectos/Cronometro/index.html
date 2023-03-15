@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Cronometro</title>
+    </head>
+    <body>
+        <h1 class="titulo">Cronometro</h1>
+        <div class="contenedor">
+            <div class="cronometro">
+                <div class="pantalla">
+                    <p><span id="minuto">00</span>:<span id="segundo">00</span>:<span id="milesima">00</span></p>
+                </div>
+                <div class="botones">
+                    <button id="inicio" class="boton visible"><img class="icono" src="./img/boton-de-play.png" alt="Inicio"></button>
+                    <button id="pausa" class="boton visible oculto"><img class="icono" src="./img/pausa.png" alt="Pausa"></button>
+                    <button id="reiniciar" class="boton visible"><img class="icono" src="./img/recargar.png" alt="Reiniciar|"></button>
+                    <button id="capturar" class="boton visible oculto"><img class="icono" src="./img/cheque.png" alt="Capturar"></button>
+                </div>
+            </div>
+    
+            <!-- Lista de tiempos -->
+            <div id="lista" class="lista_oculto">
+            </div>
+        </div>
+    </body>
+    <script src="./app.js"></script>
+</html>
